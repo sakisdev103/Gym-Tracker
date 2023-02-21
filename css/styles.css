@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --bg-color: rgb(30, 30 , 30);
+    --color: rgba(255, 255, 255, 0.726);
+    --green: rgb(0, 255, 170);
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    padding: 0 1rem;
+}
+
+li{
+    margin: 0 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+}
+
+form button{
+    width: 30%;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    background-color: var(--green);
+    color: var(--bg-color);
+    border: 1px solid var(--green);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.alerts{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+.form-success{color: rgb(0, 255, 0);}
+.form-error{color: red;}
+
+.modal{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+.modal-center{
+    margin: 1rem;
+    position: absolute;
+    right: 10%;
+}
+
+.close{
+    margin: 1rem;
+    background-color: red;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid red;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 1.2rem;
+}
+
+.container{
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.header{
+    display: flex;
+    gap: 40%;
+    background-color: rgb(20, 20 ,20 );
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.right{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right button{
+    padding: 0.2rem 0.5rem;
+    border: inherit;
+    cursor: pointer;
+    background-color: var(--green);
+}
+
+.main{
+    background-color: var(--bg-color);
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.workout-header{
+    border-bottom: 1px solid white;
+    font-size: 1.25rem;
+}
+
+.workout-body{
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.modal-container{
+    color: var(--color);
+}
+
+
+.add-exercise{
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--green);
+    border-radius: 0.5rem;
+    background-color: inherit;
+    color: var(--green);
+    cursor: pointer;
+}
+
+.add-workout-btn{
+    padding: 0.5rem 1rem;
+    background-color: inherit;
+    color: var(--green);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.add-workout-btn:hover{
+    background-color: var(--green);
+    color: var(--bg-color);
+}
+
+.select-workout{
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.selected-exercise a{
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--bg-color);
+    background-color: var(--color);
+    border: 1px solid var(--color);
+}
+
+#input{display: none;}
+
+.input-workout input{
+    width: 30%;
+    margin: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--bg-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    outline: none;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.date input{
+    padding: 0.5rem;
+    margin: 1rem auto;
+    font-size: 1rem;
+}
+
+#onLoadClick{
+    display: none;
+}
+
+@media(min-width: 600px){
+    .right{
+        position: fixed;
+        right: 0;
+    }
+}
